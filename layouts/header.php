@@ -35,11 +35,8 @@
 				<div class="logo">
 					<a href="index.php"><img src="../images/net-cure_logo.png" alt="Snow"></a>
 				</div>
+				<a href="test_model_performance.php">Test Model</a>
 				<a href="account.php">Account</a>
-				<a href="test_novel_model_performance.php">Test Model</a>
-				<a href="block_ip.php">Block IP Address</a>
-				<a href="zero_trust_mode.php">Activate Zero Trust Mode</a>
-				<a href="alerts.php">Alerts</a>
 				<a href="settings.php">Settings</a>
 				<a href="help.php">Help?</a><br><br><br>
 			</div>

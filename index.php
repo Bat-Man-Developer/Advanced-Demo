@@ -20,8 +20,6 @@ include('layouts/header.php');
                   <h1 class="adminidstitle"></h1>
                   <div class="adminIdsBtnNav">
                     <a class="btn" href="index.php">Home</a>
-                    <a class="btn" href="dashboard.php">Dashboard</a>
-                    <a class="btn" href="monitor_network.php">Live Traffic</a>
                     <a class="btn" href="model_performance.php">Model Performance</a>
                     <a class="btn" href="index.php">Refresh</a>
                   </div>

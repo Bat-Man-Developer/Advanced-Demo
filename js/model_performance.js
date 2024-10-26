@@ -35,7 +35,7 @@ class Performance {
 
     getPerformance() {
         $.ajax({
-            url: '../../call_python/model_performance/getModelPerformance.php',
+            url: '../../call_python/getModelPerformance.php',
             method: 'GET',
             success: (response) => {
                 const values = response.split(','); // Assuming ',' is the delimiter

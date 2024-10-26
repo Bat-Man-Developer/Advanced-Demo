@@ -10,7 +10,7 @@
           <p class="text-center" style="color: green"><?php if(isset($_GET['registermessage'])){ echo $_GET['registermessage']; }?></p>
           <p class="text-center" style="color: green"><?php if(isset($_GET['loginmessage'])){ echo $_GET['loginmessage']; }?></p>
           <p class="text-center" style="color: red"><?php if(isset($_GET['errormessage'])){ echo $_GET['errormessage']; }?></p>
-          <h3>NET-CURE PERFORMANCE</h3>
+          <h3>MACHINE LEARNING MODEL PERFORMANCE</h3>
           <hr class="mx-auto">
           <div class="dashboardadmininfo" id="dashboardadmininfo">
           </div>
@@ -23,8 +23,6 @@
                   <h3 style="color: blue; font-size: small"><p id="responseMessage">Loading Model Performance...</p></h3>
                   <div class="adminIdsBtnNav">
                     <a class="btn" href="index.php">Home</a>
-                    <a class="btn" href="dashboard.php">Dashboard</a>
-                    <a class="btn" href="monitor_network.php">Live Traffic</a>
                     <a class="btn" href="model_performance.php">Model Performance</a>
                     <a class="btn" href="model_performance.php">Refresh</a>
                   </div>
@@ -98,6 +96,6 @@
         </div>
       </div>
     </section><br><br><br><br><br><br><br><br><br>
-    <script src="js/model_performance/model_performance.js"></script>
+    <script src="js/model_performance.js"></script>
   </body>
 </html>
