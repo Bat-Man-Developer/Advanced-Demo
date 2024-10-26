@@ -2,7 +2,7 @@
 class Performance
 {
     private $pythonExePath = "c:/Users/user/AppData/Local/Programs/Python/Python312/python.exe";
-    private $scriptPaths = "c:/xampp/htdocs/net-cure-website/python/model_performance.py";
+    private $scriptPaths = "c:/xampp/htdocs/ai-demo-website/python/model_performance.py";
     private $command = "-c"; 
 
     private function executeCommand($scriptPath)
