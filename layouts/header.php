@@ -4,6 +4,8 @@
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<title>AI-DEMO</title>
+			<link rel="icon" href="../images/net-cure_logo.png" type="image/x-icon">
+    		<link rel="shortcut icon" href="../images/net-cure_logo.png" type="image/x-icon">
 			<link rel="stylesheet" type="text/css" href="../css/style.css">
 			<link rel="stylesheet" type="text/css" href="../css/style2.css">
 			<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap" rel="stylesheet">

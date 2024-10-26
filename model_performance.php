@@ -10,7 +10,7 @@
           <p class="text-center" style="color: green"><?php if(isset($_GET['registermessage'])){ echo $_GET['registermessage']; }?></p>
           <p class="text-center" style="color: green"><?php if(isset($_GET['loginmessage'])){ echo $_GET['loginmessage']; }?></p>
           <p class="text-center" style="color: red"><?php if(isset($_GET['errormessage'])){ echo $_GET['errormessage']; }?></p>
-          <h3>MACHINE LEARNING MODEL PERFORMANCE</h3>
+          <h3>AI-DEMO MODEL PERFORMANCE</h3>
           <hr class="mx-auto">
           <div class="dashboardadmininfo" id="dashboardadmininfo">
           </div>
@@ -35,10 +35,6 @@
                             <img id="confusion-matrix" alt="Loading Image...">
                         </div>
                         <div class="plot">
-                            <h2>Model Weights</h2>
-                            <img id="model-weights" alt="Loading Image...">
-                        </div>
-                        <div class="plot">
                             <h2>Feature Importance</h2>
                             <img id="feature-importance" alt="Loading Image...">
                         </div>
@@ -57,30 +53,6 @@
                         <div class="plot">
                             <h2>Calibration Plot</h2>
                             <img id="calibration-plot" alt="Loading Image...">
-                        </div>
-                        <div class="plot">
-                            <h2>Boxplots Predictions</h2>
-                            <img id="boxplots-predictions" alt="Loading Image...">
-                        </div>
-                        <div class="plot">
-                            <h2>Accuracy Comparison</h2>
-                            <img id="accuracy-comparison" alt="Loading Image...">
-                        </div>
-                        <div class="plot">
-                            <h2>Precision Comparison</h2>
-                            <img id="precision-comparison" alt="Loading Image...">
-                        </div>
-                        <div class="plot">
-                            <h2>Recall Comparison</h2>
-                            <img id="recall-comparison" alt="Loading Image...">
-                        </div>
-                        <div class="plot">
-                            <h2>F1-Score Comparison</h2>
-                            <img id="f1score-comparison" alt="Loading Image...">
-                        </div>
-                        <div class="plot">
-                            <h2>Bias - Variance Tradeoff</h2>
-                            <img id="bias-variance-tradeoff" alt="Loading Image...">
                         </div>
                         <div class="plot">
                             <h2>Learning Curves</h2>
