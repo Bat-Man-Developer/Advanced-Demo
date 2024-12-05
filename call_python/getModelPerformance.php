@@ -5,7 +5,7 @@ ignore_user_abort(true);
 class Model
 {
     private $pythonExePath = "c:/Users/user/AppData/Local/Programs/Python/Python312/python.exe";
-    private $scriptPath = "../python/model_performance.py";
+    private $scriptPath = "../python/healthcare-friends-diagnosis-website.py";
 
     private function executeCommand()
     {
