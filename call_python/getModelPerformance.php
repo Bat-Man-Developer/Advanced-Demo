@@ -1,23 +1,39 @@
 <?php
-class Performance
+set_time_limit(0);
+ignore_user_abort(true);
+
+class Model
 {
     private $pythonExePath = "c:/Users/user/AppData/Local/Programs/Python/Python312/python.exe";
-    private $scriptPaths = "c:/xampp/htdocs/ai-demo-website/python/model_performance.py";
-    private $command = "-c"; 
+    private $scriptPath = "../python/healthcare-friends-diagnosis-website.py";
 
-    private function executeCommand($scriptPath)
+    private function executeCommand()
     {
-        $escapedPythonScript = escapeshellarg($scriptPath);
-        $fullCommand = $this->pythonExePath . " " . $escapedPythonScript . " " . $this->command;
-        return shell_exec($fullCommand);
+        $output = null;
+        
+        // Keep executing until we get a valid response
+        while($output === null) {
+            $escapedPythonScript = escapeshellarg($this->scriptPath);
+            $fullCommand = sprintf('%s %s', 
+                escapeshellarg($this->pythonExePath),
+                $escapedPythonScript
+            );
+            
+            $output = shell_exec($fullCommand);
+
+            if ($output === null) {
+                sleep(1); // Wait before retrying
+            }
+        }
+
+        return trim($output);
     }
 
-    public function getPerformance()
+    public function getModel()
     {
-        $scriptPath = $this->scriptPaths;
-        return $this->executeCommand($scriptPath);
+        return $this->executeCommand();
     }
 }
 
-$performance = new Performance();
-echo $performance->getPerformance();
+$model = new Model();
+echo $model->getModel();
